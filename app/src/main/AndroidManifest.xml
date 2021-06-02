@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Caixa_Eletronico">
-        <activity android:name=".loading"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".password"></activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".loading">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
