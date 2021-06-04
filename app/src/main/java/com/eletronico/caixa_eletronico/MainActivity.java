@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,7 +29,23 @@ public class MainActivity extends AppCompatActivity {
         button_sacar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                
+
+                double dinheiro;
+                dinheiro = Double.parseDouble(saldo_Sacar.getText().toString());
+
+                if(dinheiro < 20)
+                {
+                    Toast.makeText(MainActivity.this, "Valores para saque, acima de 20,00", Toast.LENGTH_LONG).show();
+                }else if(dinheiro == 20 || dinheiro == 50 || dinheiro == 100)
+                {
+                    saldoEmConta -= dinheiro;
+                    saldo_Disponivel.setText("Saldo disponível: " + "R$ " + saldoEmConta);
+                    Toast.makeText(MainActivity.this, "Saldo sacado com sucesso", Toast.LENGTH_LONG).show();
+                } else{
+                    saldoEmConta -= dinheiro;
+                    saldo_Disponivel.setText("Saldo diponível: " + "R$ " + saldoEmConta);
+                    Toast.makeText(MainActivity.this, + dinheiro + "Saldo sacado com sucesso!", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
