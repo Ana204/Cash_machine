@@ -7,18 +7,16 @@
     android:background="#512DA8"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editTextSaldo"
+    <TextView
+        android:id="@+id/Saldo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:layout_marginRight="40dp"
         android:layout_marginLeft="40dp"
-        android:hint="@string/saldo_dispon_vel"
         android:textSize="20sp"
         android:padding="10dp"
         android:gravity="left"
-        android:inputType="text"
         app:layout_constraintVertical_bias="0.272"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -38,11 +36,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/editTextSaldo"
+        app:layout_constraintTop_toBottomOf="@id/Saldo"
         app:layout_constraintVertical_bias="0.2"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints,UnknownId" />
 
     <Button
+        android:id="@+id/bt_sacar"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button"
