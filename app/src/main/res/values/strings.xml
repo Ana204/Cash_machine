@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Caixa_Eletronico</string>
+    <string name="sua_senha">Sua Senha</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="saldo_dispon_vel">SALDO DISPONÍVEL:</string>
+    <string name="_00_00">00,00</string>
+    <string name="sacar">Sacar</string>
 </resources>
