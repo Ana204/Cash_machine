@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
                 } else{
                     saldoEmConta -= dinheiro;
                     saldo_Disponivel.setText("Saldo diponível: " + "R$ " + saldoEmConta);
-                    Toast.makeText(MainActivity.this, + dinheiro + "Saldo sacado com sucesso!", Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this, "Saldo sacado com sucesso!", Toast.LENGTH_LONG).show();
                 }
             }
         });
